@@ -1,0 +1,47 @@
+body
+    {
+    font-family:'Times New Roman', Times, serif; 
+    font-size:larger;
+    background-color: bisque;
+    }
+p
+    {
+    color:green; 
+    font-size:20px;
+    }
+tr
+    {
+     background-color:black; 
+     color:aliceblue;
+    }
+h5, h6
+    {
+    font-size: 2rem;
+    color:rgb(255, 0, 251);
+    }
+ol > ul
+    {
+    background-color: blue;
+    color:#FFF;
+    }
+    td
+    {
+        height: 2rem;
+        width: 2rem;
+    }
+    /*classed are preceeded by a dot (period)
+    classes can be applied to any number of elements on a page
+    classes take precedence over id's*/
+    .blue
+    {
+        background-color: aliceblue;
+    }
+    .black
+    {
+        background-color: #222;
+    }
+    #red
+    {
+        background-color: red;
+    }
+   

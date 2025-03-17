@@ -1,0 +1,462 @@
+/*lis of variables for the css*/
+:root {
+    --ff-style: "Delicious Handrawn", "Segoi UI", "sans-serif";
+
+    --fs-normal: 1rem;
+    --fs-bigger: 1.5em;
+
+    --fw-normal: 400;
+    --fw-bolder: 700;
+
+    --clr-white: #FFF;
+    --clr-charcoal: #131313;
+    --clr-black: black;
+    --clr-yellow: #fcb045;
+    --clr-red: #fd1d1d;
+    --clr-blue: rgba(31, 59, 238, 0.828);
+
+    --clr-darkblue: rgb(29, 0, 190);
+    --clr-lightblue: rgba(34, 126, 255, 0.841);
+}
+
+/*********************************************************************************************************************************************/
+
+/*Navbar Styling Classes and IDs*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-style);
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: var(--clr-charcoal);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
+
+.navbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 1;
+}
+
+.navbar_menu_container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /*same as text-decoration: none;*/
+}
+
+.navbar_link {
+    height: 6rem;
+}
+
+.navbar_link_item {
+    color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 8rem;
+    text-decoration: none;
+    /* removes underline from link*/
+    transition: all .3s ease;
+}
+
+.navbar_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.navbar_link_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* removes underline from link*/
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--clr-white);
+    background: linear-gradient(to right, var(--clr-charcoal), var(--clr-darkblue));
+    border-radius: 10px;
+}
+
+#navbar_logo {
+    background: linear-gradient(to top, var(--clr-darkblue), var(--clr-lightblue));
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 2rem;
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar_link_item:hover {
+    color: var(--clr-darkblue);
+    transition: all .3s ease;
+}
+
+/************************************************************HERO SECTION STYLING***********************************/
+.hero {
+    background: var(--clr-black);
+    padding: 100px 0px;
+    background: linear-gradient(to top, rgb(43, 43, 43), var(--clr-charcoal), var(--clr-black));
+}
+
+.hero_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
+
+
+}
+
+.hero_heading {
+    color: var(--clr-darkblue);
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero_description {
+    font-size: 3rem;
+    background: var(--clr-blue);
+    background: linear-gradient(to bottom, var(--clr-blue), var(--clr-white));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.main_button {
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 20px 60px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, var(--clr-charcoal), var(--clr-darkblue));
+    position: relative;
+    transition: all .35s;
+}
+
+.main_button a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-size: 1.8rem;
+    z-index: 2;
+    position: relative;
+}
+
+.main_button:hover {
+    color: var(--clr-white);
+}
+
+.main_button:after {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+    background: var(--clr-darkblue);
+    transition: all .35s;
+    position: absolute;
+    content: '';
+}
+
+.main_button:hover:after {
+    width: 100%;
+
+}
+
+span {}
+
+/**************************************************************************************************/
+
+
+
+/********************************Services Section Styling***********************************************************************/
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 100px 0px;
+    background: var(--clr-black);
+    padding: 100px 0px;
+    background: linear-gradient(to bottom, rgb(43, 43, 43), var(--clr-charcoal), var(--clr-black));
+}
+
+.services h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(to bottom, var(--clr-darkblue), var(--clr-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.services_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--clr-white);
+    margin: 1rem;
+    height: 20rem;
+    width: 10rem;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, var(--clr-lightblue), var(--clr-yellow));
+}
+
+.services_card h2 {
+    text-align: center;
+}
+
+.services_card p {
+    text-align: center;
+    font-size: var(1.2rem);
+    margin-top: 1rem;
+}
+
+.services_button {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+
+}
+
+.services_button button {
+    color: var(--clr-white);
+    background-color: var(--clr-charcoal);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--fs-normal);
+}
+
+.services_card:hover {
+    cursor: help;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+/***********for repeated items (cards) - AKA Nth Chiled************/
+.services_card:nth-child(2) {
+    background: linear-gradient(to right, var(--clr-blue), var(--clr-white));
+}
+
+.services_card:nth-child(3) {
+    background: linear-gradient(to top, var(--clr-white), var(--clr-lightblue), var(--clr-charcoal));
+}
+
+.services_card:last-child {
+    background: linear-gradient(to top, var(--clr-darkblue), var(--clr-red));
+}
+
+/******************************Features Section Styling**************************/
+
+.feature {
+    background-color: var(--clr-black);
+}
+
+.features_containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 85%;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 5rem;
+}
+
+.features_content {
+    color: var(--clr-white);
+}
+
+.features_content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.features_content h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+
+}
+
+.features_content p {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 10rem;
+}
+
+.features_img {
+    text-align: center;
+    font-size: 12rem;
+}
+
+.img_card {
+    margin: 10px;
+    margin-left: 5rem;
+    height: 350px;
+    width: 350px;
+    border-radius: 8px;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, var(--clr-lightblue), var(--clr-yellow), var(--clr-darkblue));
+}
+
+/******************************************Footer Styling Section*******************/
+.footer {
+    background: linear-gradient(to bottom, var(--clr-black), var(--clr-charcoal));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.footer_link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_links_wrapper {
+    display: flex;
+}
+
+.footer_link_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    text-align: left;
+    width: 10rem;
+    box-sizing: border-box;
+    padding: 1rem;
+
+
+}
+
+.footer_link_item h2 {
+    color: var(--clr-white);
+    margin-bottom: 1rem;
+}
+
+.footer_link_item a {
+    color: var(--clr-white);
+    text-decoration: none;
+    margin-bottom: .5rem;
+    transition: .3s ease-in;
+
+}
+
+.footer_link_item a:hover {
+    color: var(--clr-darkblue);
+    transition: .3s ease-in;
+
+}
+
+.social_media {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.social_media_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    padding-bottom: 2rem;
+}
+#footer_logo {
+    color: var(--clr-white);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.social_media_wrapper > p {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+
+
+}
+.social_media_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+}
+.social_media_link{
+    color: var(--clr-white);
+    font-size: var(--fs-bigger);
+}
+.social_media_icons :hover{
+    color: var(--clr-darkblue);
+    transform: scale(1.5);
+    transition: .25s ease-in-out;
+}
+
+/************************************************************************************************************************************/
+/**********************************Mobile Styling & Media Queries***********************************/
+@media screen and (max-width: 600px) {
+    .hero_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        height: 85%;
+        margin: 0 auto;
+    }
+    .hero_heading {
+        font-size: 5rem;
+    }
+    .hero_description {
+        font-size: 2.5rem;
+    }
+    
+}

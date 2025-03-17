@@ -1,0 +1,241 @@
+:root {
+  --clr-White: hsl(0, 0%, 98%);
+  --clr-Black: #131313;
+  --clr-blue: hsl(220, 98%, 61%);
+  --clr-green: hsl(154, 59%, 51%);
+}
+
+/* nav bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-Black);
+  z-index: 999;
+}
+
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.navbar_menu_container {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navbar_link {
+  height: 6rem;
+}
+
+.navbar_link_button {
+  color: var(--clr-White);
+  display: flex;
+  align-items: right;
+  justify-self: center;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1rem;
+  height: 2rem;
+  ;
+
+}
+
+.navbar_logo {
+  text-decoration: none;
+}
+
+/**********************Carousel**********************/
+
+.carousel_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel_item[data-active] {
+
+  opacity: 1;
+}
+
+.carousel_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel_control_prev {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--clr-White);
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  left: 10px;
+  font-size: 2rem;
+}
+
+.carousel_control_next {
+
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--clr-White);
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  right: 10px;
+  font-size: 2rem;
+}
+
+/************************body**************************/
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--clr-White);
+  color: var(--clr-Black);
+}
+
+.Home_box_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home_box h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr-White);
+  text-align: center;
+  background-color: var(--clr-Black);
+  padding: 1rem;
+  padding-left: 6rem;
+
+}
+
+.Home_box p {
+  font-size: 1rem;
+  color: var(--clr-Black);
+  text-align: center;
+}
+
+.Home_box {
+  background-color: var(--clr-White);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  height: 200px;
+  text-align: center;
+}
+
+.Home_box:nth-child(1) {
+  color: var(--clr-White);
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.Home_box:nth-child(2) {
+  color: var(--clr-White);
+  grid-area: 1 / 2 / 2 / 3;
+
+}
+
+.Home_box:last-child {
+  color: var(--clr-White);
+  grid-area: 1 / 3 / 4 / 4;
+}
+
+.Curriculum_box_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Curriculum_box h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr-White);
+  text-align: center;
+  background-color: var(--clr-Black);
+  padding: 1rem;
+  padding-left: 6rem;
+
+}
+
+.Curriculum_box p {
+  font-size: 1rem;
+  color: var(--clr-Black);
+  text-align: center;
+}
+
+.Curriculum_box {
+  background-color: var(--clr-White);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 50rem;
+  max-width: 500px; 
+  height: 200px;
+  text-align: center;
+}
+
+.Curriculum_box:nth-child(1) {
+  color: var(--clr-White);
+ grid-row: 1;
+ grid-column: 2;
+}
+
+.Curriculum_box:nth-child(2) {
+  color: var(--clr-White);
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.Curriculum_box:nth-child(3) {
+  color: var(--clr-White);
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.Curriculum_box:last-child {
+  color: var(--clr-White);
+  grid-row: 2;
+  grid-column: 3; 
+}
