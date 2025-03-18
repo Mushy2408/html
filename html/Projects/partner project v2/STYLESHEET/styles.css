@@ -252,9 +252,7 @@ body {
 
 /************Curriculum page*******************/
 
-
-/************bpa page*******************/
-/* .bpa_box_grid {
+ .bpa_box_grid {
   display: grid;
   grid-template-rows: 1fr 1fr ;
   grid-template-columns: 1fr 1fr 1fr ;
@@ -320,7 +318,7 @@ body {
   color: var(--clr-White);
   grid-row: 2;
   grid-column: 3; 
-} */
+}
 
 .one_click_img
 {
